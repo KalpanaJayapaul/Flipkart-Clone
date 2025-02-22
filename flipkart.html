@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="flipkart.css">
+</head>
+<body>
+
+     <header>
+        <nav class="navbar">
+            <div class="logo">Flipkart<br>
+                <span>Explor plus</span></div>
+            <div class="search-bar">              
+                <input type="text" placeholder="Search for Products, Brands and More">
+                
+            </div>
+            <div class="nav-links">
+                <a href="login.html">Login</a>
+                <a href="#">Cart</a>
+                <a href="#">Become a Seller</a>
+            </div>
+        </nav>
+     </header>
+     <br>
+    <div class="categories">
+        <table >
+            <tr>
+                <td>
+                    <img src="kilos.webp" alt="Logo">
+                    <div class="label">Kilos</div>
+                </td>
+                <td>
+                    <img src="mobile.webp" alt="Logo">
+                    <div class="label">Mobiles</div>
+                </td>
+                <td>
+                    <img src="fashion.webp" alt="Logo">
+                    <div class="label">Fashion</div>
+                </td>
+                <td>
+                    <img src="gadget.jpg" alt="Logo">
+                    <div class="label">Electronics</div>
+                </td>
+                <td>
+                    <img src="home-furn.webp" alt="Logo">
+                    <div class="label">Home & Furniture </div>
+                </td>
+                <td>
+                    <img src="homeapplie.png" alt="Logo">
+                    <div class="label">Appliances</div>
+                </td><td>
+                    <img src="flight.avif" alt="Logo">
+                    <div class="label">Flight Bookings</div>
+                </td><td>
+                    <img src="toys.jpg.jpeg" alt="Logo">
+                    <div class="label">Beauty, Toys & More</div>
+                </td><td>
+                    <img src="vehicle.jpg" alt="Logo">
+                    <div class="label">Two Wheelers</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+
+  
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="banner1.jpg.jpeg" >
+        </div>       
+        <div class="mySlides fade">
+          <img src="banner2.jpg.jpeg" >
+        </div>
+       <div class="mySlides fade">
+          <img src="banner3.jpg.jpeg">
+        </div>
+        <div class="mySlides fade">
+            <img src="banner4.jpg.jpeg">
+          </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+            </script>
+
+    <section class="electronics">
+        <h2>Best of Electronics</h2>
+        <div class="products">
+            <div class="product">
+                <img src="watch.jpg" alt="Smartwatch">
+                <p>Fastrack Smartwatch <br> From ₹1,399</p>
+            </div>
+            <div class="product">
+                <img src="projector.jpg" alt="Projector">
+                <p>Projector <br> From ₹9,990</p>
+            </div>
+            <div class="product">
+                <img src="speaker.jpg" alt="Speaker">
+                <p>Best Selling Mobile Speaker <br> From ₹499</p>
+            </div>
+            <div class="product">`
+                <img src="printer.jpg" alt="Canon PIXMA MG2470 ">
+                <p>Printers <br> From ₹2,336</p>
+            </div> <div class="product">`
+                <img src="shaver.jpg" alt="Shaver">
+                <p>Printers <br> From ₹2,336</p>
+            </div>
+            <div class="product">`
+                <img src="printer.jpg" alt="Printer">
+                <p>Printers <br> From ₹101,910</p>
+            </div>
+            <div class="ad">
+                <img src="air-india.jpeg" alt="Air India Ad">
+            </div>
+        
+        </div>
+        
+    </section>
+  
+    <script src="flipkart.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Flipkart Wholesale</a></li>
+                </ul>
+            </div>
+          
+            <div class="footer-section">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Flipkart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
